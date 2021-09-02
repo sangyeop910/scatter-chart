@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <title>scatter plot</title>
+</head>
+
+<body>
+    <div id="my_dataviz"></div>
+    <svg width="460" height="400">
+        <g transform="translate(60,10)">
+            <g transform="translate(0,360)" fill="none" font-size="10" font-family="sabs-serif" text-anchor="middle">
+                <path class="domain" stroke="#000" d="M0.5,6V0.5H370.5V6"></path>
+                <g class="tick" opacity="1" transform="translate(0.5,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">0</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(46.75,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">500</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(93,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">1000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(139.25,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">1500</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(185.5,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">2000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(231.75,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">2500</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(278,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">3000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(324.25,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">3500</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(370.5,0)">
+                    <line stroke="#000" y2="6"></line>
+                    <text fill="#000" y="9" dy="0.71em">4000</text>
+                </g>
+            </g>
+            <g fill="none" font-size="10" font-family="sans-serif" text-anchor="end">
+                <path class="domain" stroke="#000" d="M-6,360.5H0.5V0.5H-6"></path>
+                <g class="tick" opacity="1" transform="translate(0,324.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">50000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,288.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">100000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,252.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">150000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,216.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">200000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,180.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">250000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,144.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">300000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,108.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">350000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,72.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">400000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,36.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">450000</text>
+                </g>
+                <g class="tick" opacity="1" transform="translate(0,0.5)">
+                    <line stroke="#000" x2="-6"></line>
+                    <text fill="#000" x="-9" dy="0.32em">500000</text>
+                </g>
+            </g>
+            <g>
+                <circle cx="200" cy="200" r="3" style="fill: rgb(105, 179, 162);" class=""></circle>
+                <circle cx="250" cy="250" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="100" cy="100" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="150" cy="150" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="300" cy="300" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="400" cy="400" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="222" cy="222" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="333" cy="333" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="111" cy="111" r="3" style="fill: rgb(105, 179, 162);"></circle>
+                <circle cx="20" cy="20" r="3" style="fill: rgb(105, 179, 162);"></circle>
+            <g>
+    </svg>
+    <script>
+        var margin = {
+                top: 10,
+                right: 30,
+                bottom: 30,
+                left: 60
+            },
+            width = 460 - margin.left - margin.right,
+            height = 400 - margin.top - margin.bottom;
+
+        var svg = d3.select("#my_dataviz")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/2_TwoNum.csv", function(data) {
+            var x = d3.scaleLinear()
+                .domain([0, 4000])
+                .range([0, width]);
+            svg.append("g")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            // Add Y axis
+            var y = d3.scaleLinear()
+                .domain([0, 500000])
+                .range([height, 0]);
+            svg.append("g")
+                .call(d3.axisLeft(y));
+
+            svg.append('g')
+                .selectAll("dot")
+                .data(data)
+                .enter()
+                .append("circle")
+                .attr("cx", funtion(d) {
+                    return x(d.GrLivArea);
+                })
+                .attr("cy", funtion(d) {
+                    return y(d.SalePrice);
+                })
+                .attr("r", 1.5)
+                .syle("fill", "#69b3a2")
+        })
+    </script>
+</body>
